@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <canvas id="dot-bg" aria-hidden="true"></canvas>
+
+  <button id="theme-btn" aria-label="Change theme">🌙</button>
+
+  <main class="app">
+
+    <section class="calculator">
+
+      <div class="display-box">
+        <input type="text" id="display" placeholder="0" readonly>
+      </div>
+
+      <div class="buttons" id="btn">
+
+        <button class="function">AC</button>
+        <button class="function">+/-</button>
+        <button class="function">%</button>
+        <button class="operator">÷</button>
+
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button class="operator">x</button>
+
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button class="operator">-</button>
+
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button class="operator">+</button>
+
+        <button class="zero">0</button>
+        <button>.</button>
+        <button class="operator">=</button>
+
+      </div>
+
+    </section>
+
+    <aside id="history-box">
+      <div class="history-head">
+        <h3>History</h3>
+        <button id="clear-history">Clear</button>
+      </div>
+      <ul id="history-list"></ul>
+    </aside>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
